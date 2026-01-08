@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+starlette
+pydantic_settings
+python-dotenv
+sqlalchemy
+motor
+psycopg2-binary
+python-multipart
+passlib
+python-jose[cryptography]
