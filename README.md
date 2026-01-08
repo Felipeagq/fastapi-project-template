@@ -161,29 +161,6 @@ Esto levantará:
 
 ---
 
-## 📍 Ejemplo de Endpoints
-
-### MongoDB
-
-```
-GET    /mongo/items
-POST   /mongo/items
-PUT    /mongo/items/{id}
-DELETE /mongo/items/{id}
-```
-
-### PostgreSQL
-
-```
-GET    /postgres/users
-POST   /postgres/users
-PUT    /postgres/users/{id}
-DELETE /postgres/users/{id}
-```
-
-*(Las rutas pueden variar según el módulo implementado)*
-
----
 
 ## 📈 Buenas Prácticas Implementadas
 
@@ -191,4 +168,4 @@ DELETE /postgres/users/{id}
 * Conexiones desacopladas por base de datos
 * Validaciones con Pydantic
 * Arquitectura extensible
-* Preparado para autenticación y testing
+* Preparado para autenticación
