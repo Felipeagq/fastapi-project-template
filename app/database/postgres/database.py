@@ -6,7 +6,8 @@ from sqlalchemy.ext.declarative import declared_attr,as_declarative
 from app.settings.settings import settings
 
 engine = create_engine(
-    settings.SQLALCHEMY_DATABASE_URL
+    settings.SQLALCHEMY_DATABASE_URL,
+    # connect_args={"check_same_thread": False}
 )
 
 SessionLocal = sessionmaker(

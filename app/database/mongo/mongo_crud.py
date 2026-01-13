@@ -21,23 +21,23 @@ class BookCRUDMongo():
         token_id:str
     ) -> str:
         id = str(uuid.uuid4())
-        _book = {
+        book = {
             "_id":id,
             "title": book.title,
             "description": book.description,
             "date": str(datetime.now()),
             "autor": token_id
         }
-        await mg_database["book"].insert_one(_book)
-        return _book
+        await mg_database["book"].insert_one(book)
+        return book
 
 
     @staticmethod
     async def delete(
         id:str
     ) -> str:
-        _book = await mg_database["book"].delete_one({"_id":id})
-        return _book
+        book = await mg_database["book"].delete_one({"_id":id})
+        return book
     
 
     @staticmethod

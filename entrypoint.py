@@ -37,7 +37,7 @@ if __name__ == "__main__":
     uvicorn.run(
         "entrypoint:app",
         host="localhost",
-        port=8000,
+        port=8001,
         reload=True,
         log_level="info",
         use_colors=True
